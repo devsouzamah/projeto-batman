@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor:pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #D21617;
+}
+
+
+#logo{
+    width: 150px;
+    height: auto;    
+}
+
+.fotos-cards-container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.cards-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+
+.card{
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    font-size: 17px;
+}
+
+.banner1{
+    background-image: url("https://i2.wp.com/cafeplus.com.br/wp-content/uploads/2022/03/batman-premiere-1024x683.jpg");
+}    
+
+.banner2{
+    background-image: url("https://f.i.uol.com.br/fotografia/2022/03/03/1646335025622114315bf25_1646335025_3x2_md.jpg");
+}
+
+.banner3{
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2022/02/The-Batman-Charada-768x398.jpg');
+}
+
+.banner4{
+    background-image: url('https://cdn.ome.lt/nQvL7VGZze-eWKVIIh4QSBhSKuM=/1200x630/smart/extras/conteudos/the-batman-tem-cena-pos-creditos.jpg');
+}
+
+.banner5{
+    background-image: url('https://legadodadc.com.br/wp-content/uploads/2022/03/The-Batman-and-Gil-Colson-at-funeral-legadodadc.webp');
+}
+
+.banner6{
+    background-image: url('https://fr.web.img6.acsta.net/r_654_368/newsv7/19/01/31/10/53/1410391.jpg');
+}
+
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+span{
+    color: #fff;
+    font-family: 'kdam Thmor Pro', sans-serif; 
+}
+
+.footer-navigation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav{ 
+       display: none;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+      }
+    
+}    
